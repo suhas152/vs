@@ -7,7 +7,7 @@ import App from './app.jsx'
 const root = createRoot(document.getElementById('app'))
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={import.meta.env.BASE_URL}>
       <App />
     </BrowserRouter>
   </React.StrictMode>
